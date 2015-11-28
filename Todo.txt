@@ -1,0 +1,6 @@
+To-do-list:
+
+** DO FIRST OF ALL: Fix functions to check if services are up
+1. Finish global.php - set up all neccessary variables
+2. Finish functions.php - finish all functions that will be used and debug them
+3. Finish install script
