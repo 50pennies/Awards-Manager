@@ -16,6 +16,7 @@ installer as-you-go.
 
 ## Track our progress
 - [x] user interface
+- [x] template engine
 - [x] including support for MySQL Improved and PDO usage
 - [x] object-oriented and user-friendly global configuration (ie $awards->GetList)
 - [ ] installation script
