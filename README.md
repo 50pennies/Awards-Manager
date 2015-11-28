@@ -1,4 +1,4 @@
-# Awards-Manager
+# :star: Awards-Manager
 Awards Manager is a `stand-alone application` built with the magical powers of HTML, CSS, jQuery and PHP all combined into one great platform
 for managing awards for MyBB 1.8.6. This application comes with an installation script just like MyBB, so you will be guided through the
 installer as-you-go. 
