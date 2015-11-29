@@ -1,12 +1,10 @@
 <?php
 
 
-				## TEMPLATE ENGINE FOR AWARDS MANGER  			##
-				## DO NOT TOUCH UNLESS YOU KNOW WHAT YOU ARE 	##
-				## DOING. THANKS.								##
-				## CREDITS GOES TO THE FOLLOWING ARTICLE:		##################################################
-				## http://www.broculos.net/2008/03/how-to-make-simple-html-template-engine.html#.Vln-MNIvdD8	##
-				##################################################################################################
+	## TEMPLATE ENGINE FOR AWARDS MANGER - DO NOT TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING.	
+	## CREDITS GOES TO THE FOLLOWING ARTICLE:		
+	## http://www.broculos.net/2008/03/how-to-make-simple-html-template-engine.html#.Vln-MNIvdD8
+	##################################################################################################
 
 
 	class Template {
@@ -16,11 +14,13 @@
     	public $javascripts = array();
   
     		// construction function
-    		public function __construct($file) {
+    		public function __construct($file)
+    	{
        			 $this->file = $file;
     	}
     		// set keys
-   			public function set($key, $value) {
+   			public function set($key, $value) 
+   		{
     			 $this->values[$key] = $value;
 		}
     		// add stylesheet function
