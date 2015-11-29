@@ -1,0 +1,2 @@
+mail._domainkey	IN	TXT	( "v=DKIM1; k=rsa; t=y; "
+	  "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCXw1BivFdJHW4xRlzwrSzQwtHeqTer9Qe7qKLhoFJJz4k/GY5HegjmL1HtMkltlfWDVhuwCLkR9yExTSS1FPccnImpOx3JqOZ/GyRLhmFZ6ceVgZ9Oi3v45vXuqn5ifBlSZUU1PpBkphzippk/dnx0ZXalBqRb0TfiOjh6m2DsXwIDAQAB" )  ; ----- DKIM key mail for plebforce.com

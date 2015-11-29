@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- CSS files -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+ 	<link href="css/semantic.min.css" rel="stylesheet">
+
+ 	<!-- JS files -->
+ 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 	<script type="text/javascript" src="js/semantic.min.js"></script>
+
+ 	</head>
+ 	<body>
+<div class="ui left demo vertical inverted sidebar labeled icon menu visible">
+  <a class="item" href="index.html">
+    <i class="dashboard icon"></i>
+    Dashboard
+  </a>
+  <a class="item active">
+    <i class="heartbeat icon"></i>
+    Server
+  </a>
+    <a class="item">
+    <i class="trophy icon"></i>
+    Awards
+  </a>
+      <a class="item">
+    <i class="star icon"></i>
+   Rate Us
+  </a>
+    <a class="item">
+    <i class="plug icon"></i>
+   Uninstall
+  </a>
+  <a class="item">
+    <i class="settings icon"></i>
+   Settings
+  </a>
+</div>
+
+<div class="ui text container">
+      <h1 class="ui dividing header" style="margin-top:20px">Server Health</h1>
+      <p>This page will allow you to view critical information regarding your server such as monitoring all services used in your MyBB software, PHP versions, database optimizations and various other information that may be of use to you.</p>
+
+      <h3 class="first ui dividing header">Server Versions</h3>
+      <div class="ui four statistics">
+      	  	 <div class="statistic">
+    <div class="value">
+      <i class="trophy icon orange" id="TotalPopup" data-title="Awards Total" data-content="Shows the amount of awards currently available." data-position="left center"></i> 5
+    </div>
+    <div class="label">
+      Total Awards
+    </div>
+  </div>
+     <div class="statistic">
+    <div class="value">
+      <i class="trophy icon" id="GivenPopup" data-title="Awards Given" data-content="Shows the amount of awards you have given to users in total." data-position="top center"></i> 5
+    </div>
+    <div class="label">
+      Awards given
+    </div>
+  </div>
+
+
+    <div class="statistic">
+    <div class="value">
+      <i class="history icon" id="HistoryPopup" data-title="Awards History" data-content="Shows the amount of awards you have given to users the last 24 hour period." data-position="top center"></i> 5
+    </div>
+    <div class="label">
+      awards given
+    </div>
+  </div>
+
+
+  <div class="statistic">
+    <div class="value">
+      <i class="trophy icon" id="UsersPopup" data-title="Users with Awards" data-content="Shows the amount of users who currently own an award or more." data-position="right center"></i> 5
+    </div>
+    <div class="label">
+      Users with awards
+    </div>
+  </div>
+</div>
+
+<div class="ui divider"></div>
+
+      <div class="ui four statistics">
+      	  	 <div class="statistic">
+    <div class="value">
+      <i class="sitemap icon green" id="WebServerPopup" data-title="Web Server Status" data-content="Shows the current status of your web server." data-position="left center"></i>
+    </div>
+    <div class="label">
+      Web server 
+    </div>
+  </div>
+     <div class="statistic">
+    <div class="value">
+      <i class="database icon green" id="MySQLServerPopup" data-title="MySQL Server Status" data-content="Shows the current status of your MySQL server." data-position="top center"></i>
+    </div>
+    <div class="label">
+      MySQL server
+    </div>
+  </div>
+
+  <div class="statistic">
+    <div class="value">
+      <i class="mail icon orange" id="SMTPServerPopup" data-title="SMTP Server Status" data-content="Shows the current status of your SMTP server." data-position="top center"></i>
+    </div>
+    <div class="label">
+      SMTP server
+    </div>
+  </div>
+
+    <div class="statistic">
+    <div class="value">
+      <i class="signal icon red" id="PingServerPopup" data-title="Ping Server Status" data-content="Indicates whether your site is slow or not. Red means slow/offline." data-position="right center"></i>
+    </div>
+    <div class="label">
+      Ping server
+    </div>
+  </div>
+  <h2 class="ui header">
+  <div class="sub header"><i class="circle icon green smalltext"></i> online <i class="circle icon orange smalltext"></i> error <i class="circle icon red smalltext"></i> offline</div>
+</h2>
+
+</div>
+  </div>
+
+<script>
+ $(function() {
+$('#TotalPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#GivenPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#HistoryPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#UsersPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#WebServerPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#MySQLServerPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#SMTPServerPopup').popup({
+    on: 'hover',
+    closable: false
+});
+$('#PingServerPopup').popup({
+    on: 'hover',
+    closable: false
+});
+    });
+
+</script>
+</body>
+</html>
