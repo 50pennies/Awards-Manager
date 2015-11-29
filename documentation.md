@@ -13,11 +13,11 @@ The following PHP code must be added into any new page that you wish to overwrit
 ```
 $var = new Template("assets/templates/<link to template>");
 		$var->set("title", "Title of the page");
-		$var->set("stylesheets", "/assets/css/<link to stylesheet>");
-		$var->set("javascript", "/assets/js/<link to javascript>");
+		$var->addCSS("/assets/css/<link to stylesheet>");
+		$var->addJS("/assets/js/<link to javascript>");
 		echo $var->output();
 ```
-**QUICK TIP**: If you wish to display PHP code in a template, please add **.php**.
+**QUICK TIPS**: If you wish to display PHP code in a template, please add **.php**. External can be added in the $var->addCSS and addJS.
 ###### Stylesheets
 In your HTML page (template), add the following command to properly output your **custom** stylesheets.
 ```
